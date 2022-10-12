@@ -25,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 ActivityPassword();
             }
-        },1500);
+        },2000);
     }
 
 
