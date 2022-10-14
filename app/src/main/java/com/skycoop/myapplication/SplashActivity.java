@@ -20,11 +20,8 @@ public class SplashActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
 
         //Create transitions in screens
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                ActivityPassword();
-            }
+        new Handler().postDelayed(() -> {
+            ActivityPassword();
         },2000);
     }
 
