@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import java.util.Objects;
+
 public class PasswordActivity extends AppCompatActivity {
 
     @Override
@@ -11,5 +13,6 @@ public class PasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password);
 
+        Objects.requireNonNull(getSupportActionBar()).hide();
     }
 }
