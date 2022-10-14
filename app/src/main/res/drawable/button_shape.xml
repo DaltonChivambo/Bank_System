@@ -5,7 +5,7 @@
 
     <gradient
         android:startColor="@color/black"
-        android:centerColor="@color/vermelho"
+        android:centerColor="@color/red"
         android:endColor="@color/black"
 
         />
