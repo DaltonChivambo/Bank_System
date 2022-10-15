@@ -2,6 +2,7 @@ package com.skycoop.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,11 +31,18 @@ public class PasswordActivity extends AppCompatActivity {
             typedPassword = Integer.parseInt(edit_password.getText().toString());
 
             if (registeredPassword == typedPassword){
-                //Toas is use for show message
-                Toast.makeText(PasswordActivity.this,"Correct Password",Toast.LENGTH_SHORT).show();
+                goMainActivity();
             }else{
+                //Toasts is use for show message
                 Toast.makeText(PasswordActivity.this,"Invalid Password",Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    private void goMainActivity(){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+        //for kill Password Activity
+        finish();
     }
 }
