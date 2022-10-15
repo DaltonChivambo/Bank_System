@@ -29,18 +29,18 @@ public class MainActivity extends AppCompatActivity {
         tv_balance.setText("Balance Available:" + " MZN " + account_balance);
 
         bt_withdraw.setOnClickListener(view -> {
-            Double money = Double.parseDouble(edit_balance.getText().toString());
+            Double requested_balance = Double.parseDouble(edit_balance.getText().toString());
             Double withdrawal_fee = 20.0;
-            Double fee_plus_money = money + withdrawal_fee;
+            Double fee_plus_money = requested_balance + withdrawal_fee;
 
             if (account_balance < fee_plus_money){
                 Toast.makeText(MainActivity.this,"Transaction Failed: Insufficient Balance",Toast.LENGTH_SHORT).show();
 
-            }else if (money < 100 || money > 25000){
+            }else if (requested_balance < 100 || requested_balance > 25000){
                 Toast.makeText(MainActivity.this,"Transaction Failed: Cash withdrawal From 100MZN to 25000MZN",Toast.LENGTH_SHORT).show();
             }else {
-                account_balance -= money+ withdrawal_fee;
-                Toast.makeText(MainActivity.this,"Successful Withdrawal "+ money+"0MZN",Toast.LENGTH_SHORT).show();
+                account_balance -= requested_balance+ withdrawal_fee;
+                Toast.makeText(MainActivity.this,"Successful Withdrawal "+ requested_balance+"0MZN",Toast.LENGTH_SHORT).show();
                 tv_balance.setText("Balance Available:" + " MZN " + account_balance);
 
             }
