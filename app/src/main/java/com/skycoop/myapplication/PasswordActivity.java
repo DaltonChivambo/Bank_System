@@ -25,6 +25,8 @@ public class PasswordActivity extends AppCompatActivity {
         bt_sign.setOnClickListener(view -> {
             int registeredPassword = 111111;
             int typedPassword;
+
+            typedPassword = Integer.parseInt(edit_password.getText().toString());
         });
     }
 }
