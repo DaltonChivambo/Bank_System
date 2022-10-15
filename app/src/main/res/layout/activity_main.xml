@@ -8,7 +8,7 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_balance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.060000002" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/edit_balance"
         android:layout_width="225dp"
         android:layout_height="70dp"
         android:background="@color/white"
@@ -38,11 +38,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance"
         app:layout_constraintVertical_bias="0.17000002" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bt_withdraw"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button_shape"
@@ -50,5 +50,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_balance" />
 </androidx.constraintlayout.widget.ConstraintLayout>
