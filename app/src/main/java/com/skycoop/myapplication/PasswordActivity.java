@@ -34,7 +34,7 @@ public class PasswordActivity extends AppCompatActivity {
                 goMainActivity();
             }else{
                 //Toasts is use for show message
-                Toast.makeText(PasswordActivity.this,"Invalid Password",Toast.LENGTH_LONG).show();
+                Toast.makeText(PasswordActivity.this,"Invalid Password",Toast.LENGTH_SHORT).show();
             }
         });
     }

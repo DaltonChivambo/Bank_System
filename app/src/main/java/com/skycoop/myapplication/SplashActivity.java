@@ -28,8 +28,8 @@ public class SplashActivity extends AppCompatActivity {
 
     private void ActivityPassword(){
         //Navegate to other activity (intent)
-
         Intent intent = new Intent(SplashActivity.this,PasswordActivity.class);
         startActivity(intent);
+        finish();
     }
 }
