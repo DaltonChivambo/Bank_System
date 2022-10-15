@@ -4,9 +4,9 @@
 
 
     <gradient
-        android:startColor="@color/black"
+        android:startColor="@color/white"
         android:centerColor="@color/red"
-        android:endColor="@color/black"
+        android:endColor="@color/white"
 
         />
 
